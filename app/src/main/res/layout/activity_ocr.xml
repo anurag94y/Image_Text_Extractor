@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:id="@+id/ImageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test_image" />
+
+            <ProgressBar
+                android:id="@+id/ocrProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scrollbarSize="@android:dimen/app_icon_size" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/OCRButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="#167865"
+            android:clickable="true"
+            android:onClick="processImage">
+
+            <Button
+                android:id="@+id/OCRbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#167865"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="processImage"
+                android:text="@string/scan"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

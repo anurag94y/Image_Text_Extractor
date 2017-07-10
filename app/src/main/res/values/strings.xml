@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Image Text Extractor</string>
+    <string name="photo">Take Image</string>
+    <string name="scan">Scan</string>
+    <string name="upload">Upload</string>
+    <string name="copy">Copy Text</string>
+    <string name="again">Extract Again</string>
+</resources>
